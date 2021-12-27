@@ -1,10 +1,10 @@
-package net.peacefulcraft.templateus.commands;
+package net.peacefulcraft.nile.commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
-import net.peacefulcraft.templateus.Templateus;
+import net.peacefulcraft.nile.Templateus;
 
 public class ExampleCommand implements CommandExecutor {
 

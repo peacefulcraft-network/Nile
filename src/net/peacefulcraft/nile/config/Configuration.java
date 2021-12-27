@@ -1,4 +1,4 @@
-package net.peacefulcraft.templateus.config;
+package net.peacefulcraft.nile.config;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -9,7 +9,7 @@ import java.io.OutputStream;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
-import net.peacefulcraft.templateus.Templateus;
+import net.peacefulcraft.nile.Templateus;
 
 public abstract class Configuration {
 

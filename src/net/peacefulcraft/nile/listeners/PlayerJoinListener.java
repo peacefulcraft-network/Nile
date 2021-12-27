@@ -1,10 +1,10 @@
-package net.peacefulcraft.templateus.listeners;
+package net.peacefulcraft.nile.listeners;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
-import net.peacefulcraft.templateus.Templateus;
+import net.peacefulcraft.nile.Templateus;
 
 public class PlayerJoinListener implements Listener {
   @EventHandler

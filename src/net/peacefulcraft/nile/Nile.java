@@ -1,19 +1,19 @@
-package net.peacefulcraft.templateus;
+package net.peacefulcraft.nile;
 
 import java.util.logging.Level;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
 import net.md_5.bungee.api.ChatColor;
-import net.peacefulcraft.templateus.commands.ExampleCommand;
-import net.peacefulcraft.templateus.config.MainConfiguration;
-import net.peacefulcraft.templateus.listeners.PlayerJoinListener;
-public class Templateus extends JavaPlugin {
+import net.peacefulcraft.nile.commands.ExampleCommand;
+import net.peacefulcraft.nile.config.MainConfiguration;
+import net.peacefulcraft.nile.listeners.PlayerJoinListener;
+public class Nile extends JavaPlugin {
   
-  public static final String messagingPrefix = ChatColor.GREEN + "[" + ChatColor.BLUE + "PCN" + ChatColor.GREEN + "]" + ChatColor.RESET;
+  public static final String messagingPrefix = ChatColor.GREEN + "[" + ChatColor.BLUE + "Nile" + ChatColor.GREEN + "]" + ChatColor.RESET;
 
-  private static Templateus _this;
-    public static Templateus _this() { return _this; }
+  private static Nile _this;
+    public static Nile _this() { return _this; }
 
   private static MainConfiguration configuration;
     public static MainConfiguration getConfiguration() { return configuration; }

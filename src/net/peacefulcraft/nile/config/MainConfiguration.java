@@ -1,4 +1,4 @@
-package net.peacefulcraft.templateus.config;
+package net.peacefulcraft.nile.config;
 
 public class MainConfiguration extends Configuration {
 

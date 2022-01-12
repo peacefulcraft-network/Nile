@@ -21,13 +21,19 @@ public class NileClaim {
 	private List<UUID> moderators;
 		public List<UUID> getModerators() { return Collections.unmodifiableList(this.moderators); }
 
-	public NileClaim(int claimId, String claimName, List<UUID> owners, List<UUID> moderators) {
+	/** Current stores money amount */
+	private Integer wallet;
+		public void deposit(int amount) { wallet += amount; }
+
+	public NileClaim(int claimId, String claimName, List<UUID> owners, List<UUID> moderators, Integer wallet) {
 		this.claimId = claimId;
 		this.claimName = claimName;
 
 		this.chunks = Collections.synchronizedList(new ArrayList<NileChunk>());
 		this.owners = Collections.synchronizedList(owners);
 		this.moderators = Collections.synchronizedList(moderators);
+
+		this.wallet = wallet;
 	}
 
 	/**

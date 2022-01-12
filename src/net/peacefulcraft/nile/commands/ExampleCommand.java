@@ -4,7 +4,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
-import net.peacefulcraft.nile.Templateus;
+import net.peacefulcraft.nile.Nile;
 
 public class ExampleCommand implements CommandExecutor {
 
@@ -15,7 +15,7 @@ public class ExampleCommand implements CommandExecutor {
    * @param String args The arguements passed by the player. Each space in the command counts as a new argument. 
    */
   public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-    sender.sendMessage(Templateus.messagingPrefix + "You used the example command!");
+    sender.sendMessage(Nile.messagingPrefix + "You used the example command!");
     return true;
   }
   

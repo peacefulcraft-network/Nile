@@ -9,7 +9,7 @@ import java.io.OutputStream;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
-import net.peacefulcraft.nile.Templateus;
+import net.peacefulcraft.nile.Nile;
 
 public abstract class Configuration {
 
@@ -37,7 +37,7 @@ public abstract class Configuration {
 
 	protected void createDefaultConfiguration(Boolean empty) {
 		try {
-			this.configFile = new File(Templateus._this().getDataFolder(), this.configName);
+			this.configFile = new File(Nile._this().getDataFolder(), this.configName);
 			if (!this.configFile.exists()) {
 				this.configFile.getParentFile().mkdirs();
 				if (empty) {
@@ -54,10 +54,10 @@ public abstract class Configuration {
 					in.close();
 				}
 			} else {
-				Templateus._this().logNotice("Found existing file at " + this.configName + " - not creating a new one");
+				Nile._this().logNotice("Found existing file at " + this.configName + " - not creating a new one");
 			}
 		} catch (IOException e) {
-			Templateus._this().logSevere("Error initializing config file " + this.configName);
+			Nile._this().logSevere("Error initializing config file " + this.configName);
 			e.printStackTrace();
 		}
 	}
@@ -71,7 +71,7 @@ public abstract class Configuration {
 			this.config.save(this.configFile);
 		  } catch (IOException e) {
 			e.printStackTrace();
-			Templateus._this().logSevere("Unable to save configuration file.");
+			Nile._this().logSevere("Unable to save configuration file.");
 		  }
 	}
 }

@@ -4,11 +4,11 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
-import net.peacefulcraft.nile.Templateus;
+import net.peacefulcraft.nile.Nile;
 
 public class PlayerJoinListener implements Listener {
   @EventHandler
   public void onPlayerJoin(PlayerJoinEvent ev) {
-    ev.getPlayer().sendMessage(Templateus.messagingPrefix + "Welcome to the server! -Templateus");
+    ev.getPlayer().sendMessage(Nile.messagingPrefix + "Welcome to the server! -Templateus");
   }
 }

@@ -58,6 +58,16 @@ public class ItemIdentifier {
 		quantity = item.getAmount();
 	}
 
+	public ItemStack getItemStack() {
+		ItemStack item = new ItemStack(this.material, this.quantity);
+		ItemMeta meta = item.getItemMeta();
+		meta.setLore(this.lore);
+		meta.setDisplayName(this.displayName);
+		item.setItemMeta(meta);
+
+		return item;
+	}
+
 	/**
 	 * Takes an arraylist of items and converts into formatted item identifiers
 	 * @param items list of items
